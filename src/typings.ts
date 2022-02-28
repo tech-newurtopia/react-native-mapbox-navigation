@@ -36,5 +36,4 @@ export interface IMapboxNavigationProps {
   onArrive?: () => void;
   showsEndOfRouteFeedback?: boolean;
   hideStatusView?: boolean;
-  mute?: boolean;
 }

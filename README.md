@@ -80,9 +80,7 @@ Build Settings Screenshot 2
 
 </details>
 
-Place your public token in your Xcode project's `Info.plist` and add a `MBXAccessToken` key whose value is your public access token.
-
-NOTE: `MGLMapboxAccessToken` is deprecated, now you should use `MBXAccessToken` instead
+Place your public token in your Xcode project's `Info.plist` and add a `MGLMapboxAccessToken` key whose value is your public access token.
 
 Add the `UIBackgroundModes` key to `Info.plist` with `audio` and `location` if it is not already present. This will allow your app to deliver audible instructions while it is in the background or the device is locked.
 
@@ -237,9 +235,9 @@ For more information you can read the [docs provided by Mapbox](https://docs.map
 ## Usage
 
 ```jsx
-import * as React from "react";
-import { StyleSheet, View } from "react-native";
-import MapboxNavigation from "@homee/react-native-mapbox-navigation";
+import * as React from 'react';
+import { StyleSheet, View } from 'react-native';
+import MapboxNavigation from '@homee/react-native-mapbox-navigation';
 
 export const SomeComponent = () => {
   return (
@@ -301,11 +299,7 @@ Boolean that controls route simulation. Set this as `true` to auto navigate whic
 
 #### `showsEndOfRouteFeedback`
 
-Boolean that controls showing the end of route feedback UI when the route controller arrives at the final destination. Defaults to `false`. Currently this prop is only available for iOS as the Android Mapbox SDK does not support drop-in UI for this functionality. Will need to implement this manually in Android.
-
-#### `mute`
-
-Boolean that toggles voice instructions. Defaults to `false`.
+Boolean that controls showing the end of route feedback UI when the route controller arrives at the final destination. Defaults to `false`.
 
 #### `hideStatusView`
 
